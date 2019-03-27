@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.tdstecnologia.cursojpa.enums;
 
 import java.io.Serializable;
@@ -18,14 +13,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *
- * @author dherkyan.silva@datainfo.inf.br
- */
 @Entity
-@Table(name = "tb_enum")
+@Table(name = "tb_semana")
 @XmlRootElement
-public class TbEnum implements Serializable {
+public class Semana implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -53,10 +44,10 @@ public class TbEnum implements Serializable {
         
     
 
-    public TbEnum() {
+    public Semana() {
     }
 
-    public TbEnum(Integer id) {
+    public Semana(Integer id) {
         this.id = id;
     }
 
@@ -104,10 +95,10 @@ public class TbEnum implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof TbEnum)) {
+        if (!(object instanceof Semana)) {
             return false;
         }
-        TbEnum other = (TbEnum) object;
+        Semana other = (Semana) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }

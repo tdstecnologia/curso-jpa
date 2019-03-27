@@ -12,9 +12,9 @@ public class MainEnum {
         EntityManager em = emf.createEntityManager();
 
         try {
-            TbEnum tb = new TbEnum();
-            tb.setDiaSemanaNome(EnumSemama.SEGUNDA);
-            tb.setDiaSemanaIndice(EnumSemama.TERCA);
+            Semana tb = new Semana();
+            tb.setDiaSemanaNome(EnumSemama.DOMINGO);
+            tb.setDiaSemanaIndice(EnumSemama.DOMINGO);
             
             tb.setDiaSemanaNomeCustom(EnumSemama.DOMINGO);
             tb.setDiaSemanaIndiceCustom(EnumSemama.DOMINGO);
