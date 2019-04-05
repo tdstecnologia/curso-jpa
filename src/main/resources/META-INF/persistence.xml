@@ -4,6 +4,9 @@
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <class>br.com.tdstecnologia.cursojpa.crud.Carro</class>
     <class>br.com.tdstecnologia.cursojpa.enums.Semana</class>
+    <class>br.com.tdstecnologia.cursojpa.relacionamento.Pessoa</class>
+    <class>br.com.tdstecnologia.cursojpa.relacionamento.CursoPessoa</class>
+    <class>br.com.tdstecnologia.cursojpa.relacionamento.Curso</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/curso_jpa?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
